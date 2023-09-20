@@ -1,0 +1,24 @@
+<!-- <br />
+<label>Common Mask</label>
+<br />
+<input
+  #input
+  mask="00-00"
+  [value]="value"
+  (input)="modelChange(input.value)"
+  (focus)="onTouched?.()"
+/>
+<br /> -->
+
+<br />
+
+<label>Facade</label>
+<br />
+<input
+  #input
+  [mask]="maskConfig.mask"
+  [hiddenInput]="maskConfig.options.hiddenInput"
+  [value]="value"
+  (input)="modelChange(input.value)"
+  (focus)="onTouched?.()"
+/>
