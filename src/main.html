@@ -4,13 +4,13 @@
   <br />
   <input
     [mask]="maskConfig.mask"
-    [showMaskTyped]="true"
+    [showMaskTyped]="maskConfig.options.showMaskTyped"
     [shownMaskExpression]="maskConfig.mask"
-    placeHolderCharacter="0"
-    [specialCharacters]="[':', ' ', 'D', 'H', 'M', '\\S']"
+    placeHolderCharacter="masConfig.options.placeHolderCharacter"
+    [specialCharacters]="maskConfig.options.specialCharacters"
     [patterns]="maskConfig.options.patterns"
-    [dropSpecialCharacters]="false"
-    [leadZeroDateTime]="true"
+    [dropSpecialCharacters]="maskConfig.options.dropSpecialCharacters"
+    [leadZeroDateTime]="maskConfig.options.leadZeroDateTime"
     [autocomplete]="false"
   />
 </form>

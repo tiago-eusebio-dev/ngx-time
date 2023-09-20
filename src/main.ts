@@ -54,6 +54,11 @@ export class App implements OnInit {
           pattern: new RegExp('\\d'),
         },
       },
+      specialCharacters: [':', ' ', 'D', 'H', 'M', '\\S'],
+      placeHolderCharacter: '0',
+      showMaskTyped: true,
+      dropSpecialCharacters: false,
+      leadZeroDateTime: true,
     },
   };
 
