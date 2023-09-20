@@ -1,24 +1,11 @@
 <form [formGroup]="form">
-  <label>NgxMask</label>
-  <!-- <br />
-  <br />
-<input
-    formControlname="ngxMaskInputTest"
-    [mask]="maskConfig.mask"
-    [shownMaskExpression]="maskConfig.shownMaskExpression"
-    [showMaskTyped]="maskConfig.showMaskAsPlaceholder"
-    [leadZero]="true"
-    [placeHolderCharacter]="maskConfig.placeHolderCharacter"
-    [specialCharacters]="maskConfig.customSpecialCharacters"
-  />
-  -->
-
+  <label>NgxMask Time</label>
   <br />
   <br />
   <input
-    mask="00H : 00M : 00S"
+    [mask]="maskConfig.mask"
     [showMaskTyped]="true"
-    shownMaskExpression="00H : 00M : 00S"
+    [shownMaskExpression]="maskConfig.mask"
     placeHolderCharacter="0"
     [specialCharacters]="[':', ' ', 'D', 'H', 'M', '\\S']"
     [patterns]="maskConfig.options.patterns"
