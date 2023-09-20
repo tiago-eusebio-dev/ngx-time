@@ -65,8 +65,6 @@ export class App implements OnInit {
   ngOnInit() {
     this.form.valueChanges.subscribe(() => console.log(this.form));
   }
-
-  protected buttonClick() {}
 }
 
 bootstrapApplication(App);
