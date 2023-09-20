@@ -55,7 +55,7 @@ export class App implements OnInit {
         },
       },
       specialCharacters: [':', ' ', 'D', 'H', 'M', '\\S'],
-      placeHolderCharacter: '0',
+      placeHolderCharacter: '',
       showMaskTyped: true,
       dropSpecialCharacters: false,
       leadZeroDateTime: true,
