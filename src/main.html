@@ -1,8 +1,9 @@
 <form [formGroup]="form">
-  <label>NgxMask Time</label>
+  <label for="ngxMaskInputTest">NgxMask Time</label>
   <br />
   <br />
   <input
+    name="ngxMaskInputTest"
     formControlName="ngxMaskInputTest"
     [mask]="maskConfig.mask"
     [showMaskTyped]="maskConfig.options.showMaskTyped"

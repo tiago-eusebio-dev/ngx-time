@@ -1,5 +1,5 @@
 import 'zone.js/dist/zone';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
@@ -12,7 +12,8 @@ import { IMaskConfig } from './entities/mask-config.interface';
   providers: [provideNgxMask()],
   templateUrl: './main.html',
 })
-export class App implements OnInit {
+export class App {
+  // The mask to be used
   private mask = '00D : 00H : 00M : 00S';
 
   form = new FormGroup({
@@ -68,10 +69,6 @@ export class App implements OnInit {
       },
     },
   };
-
-  ngOnInit() {
-    this.form.valueChanges.subscribe(() => console.log(this.form));
-  }
 }
 
 bootstrapApplication(App);
