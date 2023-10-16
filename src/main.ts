@@ -28,7 +28,7 @@ export class App {
       showMaskTyped: true,
       dropSpecialCharacters: false,
       leadZeroDateTime: true,
-      // The defaut specialCharacters + custom
+      // The default specialCharacters + custom
       specialCharacters: [
         '-',
         '/',
