@@ -1,3 +1,3 @@
 # ngx-time
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ngx-time?file=src%2Fmain.ts)
+[Edit on Codeflow ⚡️](https://stackblitz.com/~/github.com/tiago-eusebio-dev/ngx-time)
